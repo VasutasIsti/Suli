@@ -7,8 +7,13 @@
         Emerald         #33CA7F
 */
 
+:root{
+    --bgc:#33CA7F;
+    --footer:#FBD1A2;
+}
+
 body{
-    background-color: #33CA7F;
+    background-color: var(--bgc);
     min-height: 100%;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,12 +48,15 @@ section{
 .header h1{
     font-size: 5vw;
     color: black;
-    mix-blend-mode: ;
 }
 
 .footer{
-    background-color: #7DCFB6;
+    background-color: var(--footer);
+    color: #000000;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+.footer a:any-link{
+    color: #277BCF;
 }

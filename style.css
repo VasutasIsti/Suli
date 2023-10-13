@@ -1,3 +1,7 @@
+:root{
+    --bgc:beige;
+}
+
 html{
     height: 100%;
 }
@@ -5,8 +9,9 @@ body{
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
-    background-color: beige;
+    background-color: var(--bgc);
     color: black;
+    text-align: center;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -20,6 +25,9 @@ h1{
 p{
     margin: 0 0 20px 0;
 }
+a:any-link{
+    color: #51A3F5;
+}
 .content{
     padding: 20px;
     margin: auto;
@@ -30,8 +38,27 @@ p{
     background-color: white;
     box-shadow: 10px 10px 10px gray;
     border-radius: 10px;
+    align-items: center;
 }
-
+.option{
+    transition-duration: 0.5s;
+    padding: 20px;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 10px;
+}
+.clickable {
+    cursor: pointer;
+}
+.option:hover{
+    background-color: beige;
+    transition-duration: 0.5s;
+}
 .footer{
     grid-row-start: 2;
     grid-row-end: 3;
