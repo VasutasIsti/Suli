@@ -1,0 +1,54 @@
+/*
+    Használt színek:
+        Sandy brown     #FC9F5B
+        Sunset          #FBD1A2
+        Vanilla         #ECE4B7
+        Tiffany Blue    #7DCFB6
+        Emerald         #33CA7F
+*/
+
+body{
+    background-color: #33CA7F;
+    min-height: 100%;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+section{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header{
+    background-color: #7DCFB6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: transparent;
+    box-shadow: 10px 10px 5px #13AA5F;
+}
+
+.header h1{
+    font-size: 5vw;
+    color: black;
+    mix-blend-mode: ;
+}
+
+.footer{
+    background-color: #7DCFB6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
